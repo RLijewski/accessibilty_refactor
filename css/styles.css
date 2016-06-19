@@ -3,12 +3,16 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: #FFCE53 solid 2px;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
+  color: #33D59D;
   background: #2d2b30;
 }
 
@@ -16,11 +20,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #AFAFAF;
 }
 
 a:hover {
-  color: #999;
+  color: #FFF;
 }
 
 /* Section Styles */
@@ -64,11 +68,24 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('../img/concert02_with_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 95px;
   height: 350px;
+  font-size: 1.2em;
+}
+
+#band-name {
+  text-transform: uppercase;
+  color: #2d2b30;
+  margin-bottom: 20px;
+}
+
+#catch-phrase {
+  text-transform: lowercase;
+  margin-top: 25px;
+  color: #FF5C7B;
 }
 
 .tag {
@@ -88,25 +105,25 @@ header .name{
   font-weight: 600;
   padding: 20px;
   text-transform: uppercase;
-  color: #781125;
+  color: #FF5C7B;
 }
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid #FF5C7B;
   clear: both;
 }
 .card:hover {
-  border-color: #96731A;
+  border-color: #FFCE53;
 }
 
 
 .photo{
   display: block;
   width: 200px;
-  height: 0;
+  height: 0%;
   margin: 0 auto;
 }
 
@@ -118,9 +135,9 @@ header .name{
 }
 
 .heading{
-  font-size: 2em;
+  font-size: 1em;
   text-transform: uppercase;
-  color: #781125;
+  color: #FF5C7B;
   margin-top: 10px;
 }
 
@@ -157,18 +174,6 @@ a.social {
   transition: all .5s;
 }
 
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
-}
-
 a.social:hover {
   opacity: 1;
 }
@@ -177,6 +182,21 @@ a.social:hover {
 }
 
 /* Styles for larger screens */
+@media screen and (min-width: 620px) {
+  #tour-dates th {
+    font-size: 1.2em;
+  }
+
+  #tour-dates td {
+    font-size: 1em;
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+}
+
+
 @media screen and (min-width: 840px) {
 
   .flex {
@@ -188,6 +208,7 @@ a.social:hover {
 
   header {
     min-height: 470px;
+    font-size: 2em;
   }
 
   .nav {
@@ -220,9 +241,15 @@ a.social:hover {
     text-align: left;
   }
 
+
+
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+  }
+
+  #tour-dates {
+    width: 75%;
   }
 }

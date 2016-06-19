@@ -10,7 +10,29 @@ pre {
 }
 
 .pick{
-  width: 40px;
-  height: 0;
-  padding: 10px;
+  width: 20px;
+  height: 21.5px;
+  margin: 0 5px;
+}
+
+#tour-dates {
+  width: 95%;
+  margin: auto;
+}
+
+#tour-dates caption {
+  margin-bottom: 20px;
+}
+
+#tour-dates thead {
+  text-align: center;
+}
+
+#tour-dates th {
+  font-size: .7em;
+}
+
+#tour-dates td {
+  font-weight: lighter;
+  font-size: .5em;
 }
